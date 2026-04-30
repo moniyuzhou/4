@@ -1,11 +1,14 @@
 ```mermaid
----
-title: Li基反钙钛矿离子电导率对比
----
-xychart-beta
-    x-title "材料"
-    y-title "离子电导率 (×10⁻³ S/cm)"
-    x-axis ["Li₄OBr₂\n理论", "Li₄OBr₂\n实验", "Li₇O₂Br₃", "Li₃OCl", "Li₃OBr", "LiBr(Li₂OHBr)₂"]
-    y-axis "离子电导率 (×10⁻³ S/cm)" 0 --> 4
-    bar [1.08, 0.000015, 0.024, 0.74, 0.27, 3.28]
+quadrantChart
+    title Li基反钙钛矿：电导率 vs 活化能
+    x-axis "离子电导率 (×10⁻³ S/cm) →"
+    y-axis "活化能 (eV) →"
+    quadrant-1 "高σ, 高Ea"
+    quadrant-2 "低σ, 高Ea"
+    quadrant-3 "低σ, 低Ea"
+    quadrant-4 "高σ, 低Ea"
+    "Li₄OBr₂ (n=1)": [1.08, 0.325]
+    "Li₃OCl": [0.74, 0.316]
+    "Li₃OBr": [0.27, 0.29]
+    "LiBr(Li₂OHBr)₂": [3.28, 0.57]
 ```

@@ -1,12 +1,11 @@
 ```mermaid
-bar
-    title Li基反钙钛矿离子电导率
-    x-axis 材料
-    y-axis 离子电导率(S/cm) log
-    bar "Li₄OBr₂理论" : 1.08e-3
-    bar "Li₄OBr₂实验" : 1.50e-8
-    bar "Li₇O₂Br₃" : 2.40e-5
-    bar "Li₃OCl" : 7.40e-4
-    bar "Li₃OBr" : 2.70e-4
-    bar "LiBr(Li₂OHBr)₂" : 3.28e-3
+---
+title: Li基反钙钛矿离子电导率对比
+---
+xychart-beta
+    x-title "材料"
+    y-title "离子电导率 (×10⁻³ S/cm)"
+    x-axis ["Li₄OBr₂\n理论", "Li₄OBr₂\n实验", "Li₇O₂Br₃", "Li₃OCl", "Li₃OBr", "LiBr(Li₂OHBr)₂"]
+    y-axis "离子电导率 (×10⁻³ S/cm)" 0 --> 4
+    bar [1.08, 0.000015, 0.024, 0.74, 0.27, 3.28]
 ```
